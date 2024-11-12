@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaPredict K-A: Predicción de Metástasis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+        }
+        .slide {
+            display: none;
+            padding: 40px;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: 500px;
+        }
+        .active {
+            display: block;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .timer {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .comparison {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .metric {
+            font-size: 1.2em;
+            color: #2980b9;
+            margin: 10px 0;
+        }
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+        }
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 5px;
+            background: #3498db;
+            transition: width 0.3s;
+        }
+        .slide-number {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2c3e50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .content-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <div class="timer">07:00</div>
+
+    <!-- Diapositiva 1: Introducción -->
+    <div class="slide active">
+        <h1>MetaPredict K-A</h1>
+        <h2>Sistema Avanzado de Predicción de Metástasis</h2>
+        <div class="content-box">
+            <h3>Revolucionando la Detección Temprana</h3>
+            <p>Implementación de arquitectura Kolmogorov-Arnold para predicción temprana</p>
+            <p class="metric">Tiempo de presentación: 7 minutos</p>
+        </div>
+    </div>
+
+    <!-- Diapositiva 2: Contexto -->
+    <div class="slide">
+        <h1>Contexto del Problema</h1>
+        <div class="content-box">
+            <h3>Desafíos Actuales</h3>
+            <ul>
+                <li>50% de detecciones tardías</li>
+                <li>Costos elevados de procesamiento</li>
+                <li>Tiempo crítico en diagnóstico</li>
+                <li>Limitaciones tecnológicas existentes</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Diapositiva 3: Solución Propuesta -->
+    <div class="slide">
+        <h1>Solución K-A</h1>
+        <div class="content-box">
+            <h3>Arquitectura Kolmogorov-Arnold</h3>
+            <ul>
+                <li>Procesamiento no lineal avanzado</li>
+                <li>Detección de patrones complejos</li>
+                <li>Integración con sistemas existentes</li>
+                <li>Optimización de recursos</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Diapositiva 4: Comparativa Técnica -->
+    <div class="slide">
+        <h1>K-A vs Transformers</h1>
+        <div class="comparison">
+            <div class="column">
+                <h3>Transformers</h3>
+                <ul>
+                    <li>Complejidad O(n²)</li>
+                    <li>8GB RAM mínimo</li>
+                    <li>97.8% precisión</li>
+                    <li>1.2s procesamiento</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Sistema K-A</h3>
+                <ul>
+                    <li>Complejidad O(n log n)</li>
+                    <li>2GB RAM suficiente</li>
+                    <li>99.2% precisión</li>
+                    <li>0.3s procesamiento</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diapositiva 5: Arquitectura -->
+    <div class="slide">
+        <h1>Arquitectura del Sistema</h1>
+        <div class="content-box">
+            <h3>Componentes Principales</h3>
+            <ul>
+                <li>Módulo de captura de datos multimodal</li>
+                <li>Procesador K-A optimizado</li>
+                <li>Sistema de análisis predictivo</li>
+                <li>Interface de resultados en tiempo real</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Diapositiva 6: Implementación -->
+    <div class="slide">
+        <h1>Proceso de Implementación</h1>
+        <div class="comparison">
+            <div class="column">
+                <h3>Fase 1 (2 meses)</h3>
+                <ul>
+                    <li>Configuración inicial</li>
+                    <li>Integración de datos</li>
+                    <li>Pruebas básicas</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Fase 2 (3 meses)</h3>
+                <ul>
+                    <li>Optimización</li>
+                    <li>Validación clínica</li>
+                    <li>Implementación final</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diapositiva 7: Resultados Esperados -->
+    <div class="slide">
+        <h1>Resultados Esperados</h1>
+        <div class="content-box">
+            <h3>Mejoras Cuantificables</h3>
+            <ul>
+                <li>Detección 48 horas más temprana</li>
+                <li>Reducción del 70% en costos operativos</li>
+                <li>Aumento del 15% en supervivencia</li>
+                <li>99.2% de precisión en predicciones</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Diapositiva 8: Ventajas Competitivas -->
+    <div class="slide">
+        <h1>Ventajas del Sistema</h1>
+        <div class="comparison">
+            <div class="column">
+                <h3>Técnicas</h3>
+                <ul>
+                    <li>Mayor eficiencia</li>
+                    <li>Mejor escalabilidad</li>
+                    <li>Menor consumo de recursos</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Clínicas</h3>
+                <ul>
+                    <li>Diagnóstico más temprano</li>
+                    <li>Menor tasa de falsos positivos</li>
+                    <li>Mejor seguimiento</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diapositiva 9: Próximos Pasos -->
+    <div class="slide">
+        <h1>Ruta de Desarrollo</h1>
+        <div class="content-box">
+            <h3>Próximas Etapas</h3>
+            <ul>
+                <li>Ampliación a otros tipos de cáncer</li>
+                <li>Integración con sistemas hospitalarios</li>
+                <li>Desarrollo de módulos adicionales</li>
+                <li>Validación en múltiples centros</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Diapositiva 10: Conclusiones -->
+    <div class="slide">
+        <h1>Conclusiones</h1>
+        <div class="content-box">
+            <h3>Impacto del Sistema</h3>
+            <ul>
+                <li>Revolución en detección temprana</li>
+                <li>Optimización de recursos hospitalarios</li>
+                <li>Mejora en pronóstico de pacientes</li>
+                <li>Nuevo estándar en predicción de metástasis</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button onclick="prevSlide()">Anterior</button>
+        <button onclick="nextSlide()">Siguiente</button>
+        <button onclick="toggleTimer()">Iniciar/Pausar</button>
+        <button onclick="resetTimer()">Reiniciar</button>
+    </div>
+
+    <div class="slide-number"></div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const progressBar = document.querySelector('.progress-bar');
+        const slideNumber = document.querySelector('.slide-number');
+        let timeLeft = 420; // 7 minutos en segundos
+        let timerInterval;
+        let timerRunning = false;
+
+        function updateSlides() {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+            
+            const progress = ((currentSlide + 1) / slides.length) * 100;
+            progressBar.style.width = `${progress}%`;
+            slideNumber.textContent = `${currentSlide + 1}/${slides.length}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlides();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlides();
+            }
+        }
+
+        function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            document.querySelector('.timer').textContent = 
+                `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            
+            if (timeLeft === 0) {
+                clearInterval(timerInterval);
+                timerRunning = false;
+            } else {
+                timeLeft--;
+            }
+        }
+
+        function toggleTimer() {
+            if (timerRunning) {
+                clearInterval(timerInterval);
+                timerRunning = false;
+            } else {
+                timerInterval = setInterval(updateTimer, 1000);
+                timerRunning = true;
+            }
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            timerRunning = false;
+            timeLeft = 420;
+            updateTimer();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        updateSlides();
+        updateTimer();
+    </script>
+</body>
+</html>
